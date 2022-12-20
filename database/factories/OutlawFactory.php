@@ -19,14 +19,14 @@ class OutlawFactory extends Factory
         return [
             //
             'name' => $this->faker->company(),
-            'alias' => $this->faker->firstName($gender = null|'male'|'female'),
-            'crime' => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
-            'hint' => $this->faker->words($nb = 3, $asText = false),
-            'reward' => $this->faker->numberBetween($min = 1000,$max = 9000),
+            'alias' => $this->faker->company(),
+            'crime' => $this->faker->company(),
+            'hint' => $this->faker->company(),
+            'reward' => $this->faker->biasedNumberBetween($min = 100, $max = 10000, $function = 'sqrt'),
             'description' => $this->faker->realText(),
             'deadline' => $this->faker->dateTime(),
-            'gang' => $this->faker->biasedNumberBetween($min = 10, $max = 20, $function = 'sqrt'),
-            'img' => $this->faker->imageUrl(),
+            'gang' => $this->faker->biasedNumberBetween($min = 1, $max = 10, $function = 'sqrt'),
+            'img' => $this->faker->imageUrl()
         ];
     }
 }

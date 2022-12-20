@@ -18,6 +18,6 @@ class Outlaw extends Model
         'description',
         'deadline',
         'gang',
-        'img',
-    ]
+        'img'
+    ];
 }
