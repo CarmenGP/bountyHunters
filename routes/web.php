@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/',[OutlawController::class, 'index']);
 Route::get('/home',[OutlawController::class, 'index']);
+Route::delete('/delete/{id}', [OutlawController::class, 'destroy'])->name('deleteOutlaw');
