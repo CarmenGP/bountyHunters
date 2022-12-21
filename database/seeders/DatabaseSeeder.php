@@ -50,6 +50,7 @@ class DatabaseSeeder extends Seeder
             'gang' => '25',
             'img' => '/public/img/Celia M.jpg',
         ]);
-        Outlaw::factory(13)->create();
+        Outlaw::factory(1)->create();
+
     }
 }
