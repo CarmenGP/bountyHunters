@@ -7,6 +7,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
+use function PHPUnit\Framework\assertCount;
+
 class CRUDOutlawTest extends TestCase
 {
     /**
@@ -41,11 +43,30 @@ class CRUDOutlawTest extends TestCase
     public function test_anOutlawCanBeDeleted(){
         $this->withExceptionHandling();
 
-        $outlaws = Outlaw::factory(1)->create();
+        $outlaw = Outlaw::factory()->create();
         $this->assertCount(1, Outlaw::all());
 
-        $response = $this->delete('deleteOutlaw', $outlaw->id);
+        $response = $this->delete(route('deleteOutlaw', $outlaw->id));
 
         $this->assertCount(0, Outlaw::all());
     }
+
+    public function test_anOutlawCanBeCreated(){
+        $this->withExceptionHandling();
+
+        $response = $this->post(route('storeOutlaw'),
+        [
+            'name' => 'name',
+            'alias' => 'alias',
+            'crime' => 'crime',
+            'hint' => 'hint',
+            'reward' => 'reward',
+            'description' => 'description',
+            'deadline' => '2023/01/19 19:00:00',
+            'gang' => '25',
+            'img' => 'img'
+        ]);
+
+        $this->assertCount(1, Outlaw::all());
+        }
 }

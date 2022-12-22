@@ -28,6 +28,7 @@ class OutlawController extends Controller
     public function create()
     {
         //
+        return view('createOutlaw');
     }
 
     /**
@@ -84,5 +85,8 @@ class OutlawController extends Controller
     public function destroy($id)
     {
         //
+        Outlaw::destroy($id);
+
+        return redirect()->route('home');
     }
 }

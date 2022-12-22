@@ -19,6 +19,15 @@ use App\Http\Controllers\OutlawController;
 
 Auth::routes();
 
-Route::get('/',[OutlawController::class, 'index']);
+// R del CRUD
+Route::get('/',[OutlawController::class, 'index'])->name('home');
 Route::get('/home',[OutlawController::class, 'index']);
+
+//D del CRUD
 Route::delete('/delete/{id}', [OutlawController::class, 'destroy'])->name('deleteOutlaw');
+
+//C del CRUD
+Route::get('/create', [OutlawController::class, 'create'])->name('createOutlaw');
+Route::post('/', [OutlawController::class, 'store'])->name('storeOutlaw');
+
+//U del CRUD
