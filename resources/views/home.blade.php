@@ -11,19 +11,19 @@
     @foreach ($outlaws as $outlaw)
     
         <div class="card mb-3" style="max-width: 540px;">
-        <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
+        <a class="bt-adm m-1 " href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo">
+                    <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo {{ $outlaw->name }}">
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body bg-dark">
-                        <h2 class="card-title text-warning">${{ $outlaw->reward }}</h2>
-                        <h3 class="card-title text-primary">{{ $outlaw->name }}</h3>
-                        <h4 class="card-title text-danger">{{ $outlaw->alias }}</h4>
+                    <div class="card-body">
+                        <h2 class="card-title">Reward ${{ $outlaw->reward }}</h2>
+                        <h3 class="card-title">{{ $outlaw->name }}</h3>
+                        <h4 class="card-title">{{ $outlaw->alias }}</h4>
                         <!-- <p class="card-text text-white">{{ $outlaw->description }}</p> -->
-                        <p class="card-text text-white">gang number {{ $outlaw->gang }}</p>
-                        <p class="card-text text-white"><small class="text-muted">{{ $outlaw->deadline }}</small></p>
+                        <p class="card-text text-brown">Gang number: {{ $outlaw->gang }}</p>
+                        <p class="card-text"><small >{{ $outlaw->deadline }}</small></p>
                         <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
                             @method('delete')
                             @csrf

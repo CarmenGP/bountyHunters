@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="./img/faviconRound.svg">    
+    <link rel="shortcut icon" type="image/x-icon" href="./img/sheriffStar.svg">    
     <title>Bounty Hunters</title>
 
     <!-- Fonts -->
