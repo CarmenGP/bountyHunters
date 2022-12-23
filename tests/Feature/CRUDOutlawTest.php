@@ -80,4 +80,21 @@ class CRUDOutlawTest extends TestCase
 
             $this->assertEquals('New Name', Outlaw::first()->name);
         }
+
+        public function test_anOutlawCanBeShowed(){
+            $this->withExceptionHandling();
+
+            $outlaws = Outlaw::factory(1)->create();
+
+            $outlaw = $outlaws[0];
+
+            $response = $this->get(route('showOutlaw', $outlaw->id));
+
+            $response->assertSee($outlaw->name);   
+            
+            $response->assertStatus(200)
+                      ->assertViewIs('showOutlaw');
+
+
+        }
 }
