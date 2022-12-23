@@ -40,6 +40,11 @@ class OutlawController extends Controller
     public function store(Request $request)
     {
         //
+        $outlaw = request()->except('_token');
+
+        Outlaw::create($outlaw);
+
+        return redirect()->route('home');
     }
 
     /**
@@ -51,6 +56,9 @@ class OutlawController extends Controller
     public function show($id)
     {
         //
+        $outlaw = Outlaw::find($id);
+
+        return view('showOutlaw', compact('outlaw'));
     }
 
     /**
@@ -62,6 +70,9 @@ class OutlawController extends Controller
     public function edit($id)
     {
         //
+        $outlaw = Outlaw::find($id);
+
+        return view ('editOutlaw', compact('outlaw'));
     }
 
     /**
@@ -74,6 +85,11 @@ class OutlawController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $outlaw = request()->except('_token', '_method');
+
+        Outlaw::where('id', '=', $id)->update($outlaw);
+
+        return redirect()->route('home');
     }
 
     /**

@@ -9,7 +9,9 @@
         </button>
     </div>
     @foreach ($outlaws as $outlaw)
+    
         <div class="card mb-3" style="max-width: 540px;">
+        <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo">
@@ -19,7 +21,7 @@
                         <h2 class="card-title text-warning">${{ $outlaw->reward }}</h2>
                         <h3 class="card-title text-primary">{{ $outlaw->name }}</h3>
                         <h4 class="card-title text-danger">{{ $outlaw->alias }}</h4>
-                        <p class="card-text text-white">{{ $outlaw->description }}</p>
+                        <!-- <p class="card-text text-white">{{ $outlaw->description }}</p> -->
                         <p class="card-text text-white">gang number {{ $outlaw->gang }}</p>
                         <p class="card-text text-white"><small class="text-muted">{{ $outlaw->deadline }}</small></p>
                         <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
@@ -30,11 +32,14 @@
                                 onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
                                 🏜
                             </button>
+                            <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}">✏</a>
+                            
                         </form>
-                    </div>                
-                </div>
+                    </div>                               
             </div>
-        </div>
+        </a>
+        </div>       
     @endforeach
+    </div>
 
 @endsection

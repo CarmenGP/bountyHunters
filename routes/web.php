@@ -31,3 +31,8 @@ Route::get('/create', [OutlawController::class, 'create'])->name('createOutlaw')
 Route::post('/', [OutlawController::class, 'store'])->name('storeOutlaw');
 
 //U del CRUD
+Route::get('/edit/{id}', [OutlawController::class, 'edit'])->name('editOutlaw');
+Route::patch('/outlaw/{id}', [OutlawController::class, 'update'])->name('updateOutlaw');
+
+//Show
+Route::get('/show/{id}', [OutlawController::class,'show'])->name('showOutlaw');

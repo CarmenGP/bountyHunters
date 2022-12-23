@@ -69,4 +69,15 @@ class CRUDOutlawTest extends TestCase
 
         $this->assertCount(1, Outlaw::all());
         }
+
+        public function test_anOutlawCanBeUpdated(){
+            $this->withExceptionHandling();
+
+            $outlaw = Outlaw::factory()->create();
+            $this->assertCount(1, Outlaw::all());
+
+            $response = $this->patch(route('updateOutlaw', $outlaw->id),['name' => 'New Name']);
+
+            $this->assertEquals('New Name', Outlaw::first()->name);
+        }
 }
