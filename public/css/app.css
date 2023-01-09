@@ -3,17 +3,23 @@
     padding: 0;
     border: 0; 
     font-family: 'Rye', cursive;
+    color:white;
+    background-image: url("https://img.freepik.com/foto-gratis/material-fondo-textura-tablon-madera_53876-31378.jpg?w=1380&t=st=1673277550~exp=1673278150~hmac=b710a7da1cd535cb3165c18b6d1191cfc8a182605fa0baad0280982b5f46897e");
+    background-attachment: fixed;
+
 }
 
 .createButton{
-    background-image: url(./public/img/wood.png);
     margin:10px auto;
     width: fit-content;
-    border: solid 2px black;
-    border-radius: 20px;
-    padding: 10px;    
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px; 
+    background-image: none;  
+
 }
 
 a{
-    color:black;
+    color:white;
+    text-decoration: none;
 }
