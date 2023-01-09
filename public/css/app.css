@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+}
+
+.createButton{
+    background-image: url(./public/img/wood.png);
+    margin:10px auto;
+    width: fit-content;
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 10px;    
+}
+
+a{
+    color:black;
+}

@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container">
-
         <div class="row">
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
@@ -27,10 +26,10 @@
             </div>
         </div>
     </div>
-    <div>
-        <button class="btn btn-warning">
+    <div class="createButton">
+        <button>
             <a href="{{ route('createOutlaw') }}">        
-                <div class="text-black"> Create New Manhunt Quest</div>
+                Create New Manhunt Quest
             </a>               
         </button>
     </div>
