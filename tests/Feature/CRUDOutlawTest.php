@@ -84,7 +84,7 @@ class CRUDOutlawTest extends TestCase
         public function test_anOutlawCanBeShowed(){
             $this->withExceptionHandling();
 
-            $outlaws = Outlaw::factory()->create(['name' => 'Outlaw Name']);
+            $outlaws = Outlaw::factory(2)->create();
 
             $outlaw = $outlaws[0];
 
@@ -94,7 +94,7 @@ class CRUDOutlawTest extends TestCase
             
             $response->assertStatus(200)
                     ->assertViewIs('showOutlaw') 
-                    ->assertViewHas('Outlaw Name');
+                     ->assertSee($outlaw->name);
                     
         }       
 }
