@@ -1,29 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-     
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="https://www.shutterstock.com/image-vector/wanted-bearded-cowboy-guns-vintage-260nw-1748710838.jpg" class="d-block w-100" alt="Most Wanted Outlaw photo">
-            </div>
-            <div class="carousel-item">
-            <img src="https://img.freepik.com/vector-gratis/cartel-vintage-deseado_225004-1070.jpg?w=360" class="d-block w-100" alt="Most Wanted Outlaw photo">
-            </div>
-            <div class="carousel-item">
-            <img src="https://img.freepik.com/vector-gratis/vintage-queria-cartel-salvaje-oeste_225004-79.jpg" class="d-block w-100" alt="Most Wanted Outlaw photo">
+    <div class="container">
+        <div class="row">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="https://img.freepik.com/vector-gratis/cartel-vintage-deseado_225004-1070.jpg?w=360" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="https://img.freepik.com/vector-gratis/cartel-vintage-deseado_225004-1070.jpg?w=360" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="https://img.freepik.com/vector-gratis/vintage-queria-cartel-salvaje-oeste_225004-79.jpg" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-
     <div>
         <button class="btn btn-warning">
             <a href="{{ route('createOutlaw') }}">        
