@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+
         <div class="row">
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
