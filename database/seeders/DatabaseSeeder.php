@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'French-speaking outlaw wandering around Granada cantinas. He wears glasses, looks calm but turns dangerous when he draws his favourite weapon: Laravel. Regular player in most Western saloons',
             'deadline' => '2023-01-19 08:30:00',
             'gang' => '25',
-            'img' => 'https://m1.paperblog.com/i/2/20860/forajidos-leyenda-jesse-james-ii-R-2.jpeg',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
         ]);
 
         Outlaw::factory()->create ([
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             Extremely dangerous with a pen and paper in her hand.',
             'deadline' => '2023-01-10 12:00:00',
             'gang' => '25',
-            'img' => 'https://m1.paperblog.com/i/2/20860/forajidos-leyenda-jesse-james-ii-R-2.jpeg',
+            'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
         ]);
         Outlaw::factory(1)->create();
 
