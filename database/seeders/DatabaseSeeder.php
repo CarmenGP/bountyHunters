@@ -5,7 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Outlaw;
 use Illuminate\Database\Seeder;
-
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -52,5 +52,10 @@ class DatabaseSeeder extends Seeder
         ]);
         Outlaw::factory(1)->create();
 
+        User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
+
+        User::factory()->create(['name' => 'use1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
+
+        //User::factory(5)->create();
     }
 }

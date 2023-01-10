@@ -27,11 +27,13 @@
         </div>
     </div>
     <div class="createButton">
+        @if(Auth::check() && Auth::user()->isAdmin)
         <button>
             <a href="{{ route('createOutlaw') }}">        
                 Create New Manhunt Quest
             </a>               
         </button>
+        @endif
     </div>
     @foreach ($outlaws as $outlaw)
     
@@ -52,13 +54,16 @@
                         <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
                             @method('delete')
                             @csrf
+                            @if(Auth::check() && Auth::user()->isAdmin)
                             <button type="submit"
                                 class="bt-adm m-1 d-flex justify-content-center align-item-center"
                                 onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
                                  🌵 delete manhunt
                             </button>
+                            @endif
+                            @if(Auth::check() && Auth::user()->isAdmin)
                             <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}"><img src="https://img.freepik.com/iconos-gratis/herradura_318-916026.jpg?t=st=1673278604~exp=1673279204~hmac=5330c070d21109f0999201c5864e60bf05a67a985e10fa058069cac163ea0dc5" width="5%" height="5%"> modify manhunt</a>
-                            
+                            @endif
                         </form>
                     </div>                               
             </div>
