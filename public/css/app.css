@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+    color:white;
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
+    background-attachment: fixed;
+
+}
+
+.createButton{
+    margin:10px auto;
+    width: fit-content;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px; 
+    background-image: none;  
+
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+section{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq")!important;
+}

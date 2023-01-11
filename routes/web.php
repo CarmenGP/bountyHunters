@@ -24,15 +24,15 @@ Route::get('/',[OutlawController::class, 'index'])->name('home');
 Route::get('/home',[OutlawController::class, 'index']);
 
 //D del CRUD
-Route::delete('/delete/{id}', [OutlawController::class, 'destroy'])->name('deleteOutlaw');
+Route::delete('/delete/{id}', [OutlawController::class, 'destroy'])->name('deleteOutlaw')->middleware('isadmin', 'auth');
 
 //C del CRUD
-Route::get('/create', [OutlawController::class, 'create'])->name('createOutlaw');
-Route::post('/', [OutlawController::class, 'store'])->name('storeOutlaw');
+Route::get('/create', [OutlawController::class, 'create'])->name('createOutlaw')->middleware('isadmin', 'auth');
+Route::post('/', [OutlawController::class, 'store'])->name('storeOutlaw')->middleware('isadmin', 'auth');
 
 //U del CRUD
-Route::get('/edit/{id}', [OutlawController::class, 'edit'])->name('editOutlaw');
-Route::patch('/outlaw/{id}', [OutlawController::class, 'update'])->name('updateOutlaw');
+Route::get('/edit/{id}', [OutlawController::class, 'edit'])->name('editOutlaw')->middleware('isadmin', 'auth');
+Route::patch('/outlaw/{id}', [OutlawController::class, 'update'])->name('updateOutlaw')->middleware('isadmin', 'auth');
 
 //Show
 Route::get('/show/{id}', [OutlawController::class,'show'])->name('showOutlaw');

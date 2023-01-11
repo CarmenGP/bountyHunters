@@ -1,23 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="text-center">
-        <img class="img-thumbnail" src="{{ $outlaw->img}}" alt="">
-        <div>
-            <h2>{{ $outlaw->name }}</h2>
-            <h2>{{ $outlaw->alias }}</h2>
-            <h2>{{ $outlaw->crime }}</h2>
-            <h2>{{ $outlaw->hint }}</h2>
-            <h2>{{ $outlaw->reward }}</h2>
-            <h2>{{ $outlaw->description }}</h2>
-            <h2>{{ $outlaw->gang }}</h2>
-            <h2>{{ $outlaw->img }}</h2>
-            <h2>{{ $outlaw->deadline }}</h2>
+    <section>
+        <div class="text-center">
+            <div>
+                <h2>{{ $outlaw->name }}</h2>
+                <h3> alias {{ $outlaw->alias }}</h3>
+                <img class="img-thumbnail" src="{{ $outlaw->img}}" alt="{{ $outlaw->name }}">
+                <h3>{{ $outlaw->crime }}</h3>
+                <h4>hint {{ $outlaw->hint }}</h4>
+                <h3>$ {{ $outlaw->reward }}</h3>
+                <p>{{ $outlaw->description }}</p>
+                <h5>gang {{ $outlaw->gang }}</h5>
+                <h4>{{ $outlaw->deadline }}</h4>
+            </div>
+            <div class="float-right">
+                <a class="btn btn-primary" href="{{ route('home') }}"> ↩ </a>
+            </div>
         </div>
-        <div class="float-right">
-            <a class="btn btn-primary" href="{{ route('home') }}"> ↩ </a>
-        </div>
-    </div>
+    </section>
 
 @endsection
