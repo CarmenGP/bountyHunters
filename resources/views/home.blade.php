@@ -35,42 +35,34 @@
         </button>
         @endif
     </div>
+
+    <div class="containerCard">
     @foreach ($outlaws as $outlaw)
     
-        <div class="card mb-3" style="max-width: 540px;">
-        <a class="bt-adm m-1 " href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo {{ $outlaw->name }}">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h2 class="card-title">Reward ${{ $outlaw->reward }}</h2>
-                        <h3 class="card-title">{{ $outlaw->name }}</h3>
-                        <h4 class="card-title">{{ $outlaw->alias }}</h4>
-                        <!-- <p class="card-text text-white">{{ $outlaw->description }}</p> -->
-                        <p class="card-text text-brown">Gang number: {{ $outlaw->gang }}</p>
-                        <p class="card-text"><small >{{ $outlaw->deadline }}</small></p>
-                        <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
-                            @method('delete')
-                            @csrf
-                            @if(Auth::check() && Auth::user()->isAdmin)
-                            <button type="submit"
-                                class="bt-adm m-1 d-flex justify-content-center align-item-center"
-                                onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
-                                 🌵 delete manhunt
-                            </button>
-                            @endif
-                            @if(Auth::check() && Auth::user()->isAdmin)
-                            <button class="bt-adm m-1 d-flex justify-content-center align-item-center">
-                                <a  href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}"><img src="https://img.freepik.com/iconos-gratis/herradura_318-916026.jpg?t=st=1673278604~exp=1673279204~hmac=5330c070d21109f0999201c5864e60bf05a67a985e10fa058069cac163ea0dc5" width="5%" height="5%"> modify manhunt</a>
-                            </button>
-                            @endif
-                        </form>
-                    </div>                               
-            </div>
+    <div class="outlawCard">
+        <a  href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
+        <h2 >{{ $outlaw->alias }}</h2>
+        <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo {{ $outlaw->name }}">
+        <h3 >Reward ${{ $outlaw->reward }}</h3>
         </a>
-        </div>       
+    
+        <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
+            @method('delete')
+            @csrf
+            @if(Auth::check() && Auth::user()->isAdmin)
+            <button type="submit"
+                class=""
+                onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
+                    🌵 delete manhunt
+            </button>
+            @endif
+            @if(Auth::check() && Auth::user()->isAdmin)
+            <button class="">
+                <a  href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}"><img src="https://img.freepik.com/iconos-gratis/herradura_318-916026.jpg?t=st=1673278604~exp=1673279204~hmac=5330c070d21109f0999201c5864e60bf05a67a985e10fa058069cac163ea0dc5" width="5%" height="5%"> modify manhunt</a>
+            </button>
+            @endif
+        </form>
+    </div>                            
     @endforeach
     </div>
 

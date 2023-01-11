@@ -1,13 +1,13 @@
-*{
+body{
     margin:0;
     padding: 0;
     border: 0; 
     font-family: 'Rye', cursive;
-    color:white;
+    color:black;
     background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
     background-attachment: fixed;
-
 }
+
 
 .createButton{
     margin:10px auto;
@@ -19,11 +19,29 @@
 
 }
 
+
 a{
     color:white;
     text-decoration: none;
 }
 
-section{
-    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq")!important;
+.containerCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.outlawCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    width: 30%;
+    height: fit-content;
+    margin:10px auto;
+    border: solid 1px black;
+
+}
+
+h2, h3{
+text-align: center;
+}
+
+
