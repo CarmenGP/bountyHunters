@@ -51,7 +51,7 @@
                                 <a class="btn btn-primary" href="{{ route('home') }}"> ↩ </a>
                             </div>                            
                             <div class="btnCreate">
-                                <button type="submit" value="Create">Create Manhunt Quest</button>
+                                <button type="submit" value="Create" id="validateButton">Create Manhunt Quest</button>
                             </div>
                         </form>
                     </div>
