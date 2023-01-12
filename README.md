@@ -1,7 +1,11 @@
-# PROJECT TITLE:
+
+![logo bounty Cartel y madera](https://user-images.githubusercontent.com/116545851/212129741-abf3a651-d7cb-48a6-8406-6f604514ca97.PNG)
+
+
+## PROJECT TITLE:
 Bounty Hunters
 ## A BRIEF DESCRIPTION OF WHAT THIS PROJECT DOES:
-- To realize in mobile first a web application in which the users are immersed in the Wild West and sign up to catch the outlaw in the available missions created by a sheriff administrator.
+- To create in mobile first a web application in which the users are immersed in the Wild West and sign up to catch the outlaw in the available missions created by a sheriff administrator.
 
 - The registered user can sign up and unsubscribe from each search mission and will receive a message that he/she has signed up for the hunt with information about the hunt.
 
@@ -28,7 +32,8 @@ Bounty Hunters
 * Composer installed
 * mySql
 ## METHODOLOGY:
-Agile with Scrum in mob programming mode
+* Agile with Scrum in mob programming mode
+* MVC  software design pattern
 ## NEXT STEPS:
 - Paginated list of hunts from most recent to least recent
 - Increase the list of outlaws
@@ -36,9 +41,9 @@ Agile with Scrum in mob programming mode
 - Regular validation expressions
 - Give more information and options on the hunts
 ## HOW TO INSTALL THIS PROJECT:
-* Clone git https://github.com/
+* Git clone https://github.com/CarmenGP/bountyHunters.git 
 * Composer install
-* Create database in PhpMyAdmin with database name : minnieperezbbdd.
+* Create an empty database in PhpMyAdmin with database name : bountyhunters.
 * Import the following database table: minniePerez/public/importSql/childrenteeth.sql
 ## TEST: 👀
 ![image](https://user-images.githubusercontent.com/116561400/212028967-d6bff30a-ecde-4f44-a7fb-80bcda55ef50.png)
