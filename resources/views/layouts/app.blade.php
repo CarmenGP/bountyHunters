@@ -84,5 +84,8 @@
             @yield('content')
         </main>
     </div>
+
+    @include('footer')
+
 </body>
 </html>
