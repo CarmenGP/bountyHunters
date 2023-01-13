@@ -25,6 +25,8 @@ Bounty Hunters
 
 ## SCREENSHOTS:
 ![image](https://user-images.githubusercontent.com/116561400/212030568-a92243a8-e6f7-4b7b-af65-eb6059cb2b17.png)
+![image](https://user-images.githubusercontent.com/116561400/212292316-d37a30b8-b47c-4380-9f1f-83fc6c453730.png)
+
 ## STACKS: 🔧
 ![image](https://user-images.githubusercontent.com/116561400/212031741-ce353bdc-46a2-4c82-b1a4-0774c9a327cc.png)
 ## Required
