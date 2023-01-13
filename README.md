@@ -33,6 +33,10 @@ Bounty Hunters
 * PHP 7.4 min
 * Composer installed
 * mySql
+## TEST: 👀
+![image](https://user-images.githubusercontent.com/116561400/212028967-d6bff30a-ecde-4f44-a7fb-80bcda55ef50.png)
+![image](https://user-images.githubusercontent.com/116561400/212029841-c8491e83-4d5b-4d08-b9fe-32644e4bb59e.png)
+
 ## METHODOLOGY:
 * Agile with Scrum in mob programming mode
 * MVC  software design pattern
@@ -47,7 +51,4 @@ Bounty Hunters
 * Composer install
 * Create an empty database in PhpMyAdmin with database name : bountyhunters.
 * Import the following database table: minniePerez/public/importSql/childrenteeth.sql
-## TEST: 👀
-![image](https://user-images.githubusercontent.com/116561400/212028967-d6bff30a-ecde-4f44-a7fb-80bcda55ef50.png)
-![image](https://user-images.githubusercontent.com/116561400/212029841-c8491e83-4d5b-4d08-b9fe-32644e4bb59e.png)
 
