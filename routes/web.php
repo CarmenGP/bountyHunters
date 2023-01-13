@@ -36,3 +36,8 @@ Route::patch('/outlaw/{id}', [OutlawController::class, 'update'])->name('updateO
 
 //Show
 Route::get('/show/{id}', [OutlawController::class,'show'])->name('showOutlaw');
+
+
+//Join and Leave
+Route::get('/join/{id}', [OutlawController::class,'join'])->name('join')->middleware('auth');
+Route::get('/leave/{id}', [OutlawController::class,'leave'])->name('leave')->middleware('auth');

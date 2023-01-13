@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
             'reward' => '5000',
             'description' => 'French-speaking outlaw wandering around Granada cantinas. He wears glasses, looks calm but turns dangerous when he draws his favourite weapon: Laravel. Regular player in most Western saloons',
             'deadline' => '2023-01-19 08:30:00',
-            'gang' => '25',
+            'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
         ]);
 
@@ -47,15 +47,22 @@ class DatabaseSeeder extends Seeder
             Frequents the Malaga-bound railway, mugging people with her JavaScript gun.  
             Extremely dangerous with a pen and paper in her hand.',
             'deadline' => '2023-01-10 12:00:00',
-            'gang' => '25',
+            'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
         ]);
         Outlaw::factory(1)->create();
 
         User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
 
-        User::factory()->create(['name' => 'use1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
+        User::factory()->create(['name' => 'user1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
 
-        //User::factory(5)->create();
+        User::factory()
+            ->has(Outlaw::factory()->count(5))     
+            ->create();
+    
+        Outlaw::factory()
+            ->has(User::factory()->count(5))     
+            ->create();
     }
+
 }

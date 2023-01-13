@@ -20,4 +20,10 @@ class Outlaw extends Model
         'gang',
         'img'
     ];
+
+    public function user(){
+        return $this->BelongsToMany(User::class);
+        
+
+    }
 }

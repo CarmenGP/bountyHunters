@@ -68,8 +68,17 @@
                             @endif
                         </form>
                     </div>                               
+                </div>
+            </a>
+
+            <div>
+                <button>
+                    <a href="{{ route('join', $outlaw->id)}}">💰 Join</a>
+                </button>
+                <button>
+                    <a href="{{ route('leave', $outlaw->id)}}">🧨 Leave</a>
+                </button>
             </div>
-        </a>
         </div>       
     @endforeach
     </div>
