@@ -82,5 +82,8 @@
         </div>       
     @endforeach
     </div>
-
+    <div>
+        {!! $outlaws->links()!!}
+    </div>
+    
 @endsection
