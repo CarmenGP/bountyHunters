@@ -17,9 +17,8 @@ class OutlawController extends Controller
      */
     public function index()
     {
-        //
-        $outlaws = Outlaw::get();
-        //var_dump($outlaws);
+        $outlaws = Outlaw::Paginate(2);
+        
         return view('home', compact('outlaws'));
     }
 
