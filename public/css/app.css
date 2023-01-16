@@ -4,10 +4,22 @@ body{
     border: 0; 
     font-family: 'Rye', cursive;
     color:black;
-    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
     background-attachment: fixed;
 }
 
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: -0.3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+button{
+    background: none;
+    width: fit-content;
+    border-style: none;
+}
 
 .createButton{
     margin:10px auto;
@@ -16,32 +28,44 @@ body{
     border-radius: 10px;
     padding: 5px; 
     background-image: none;  
-
 }
 
-
 a{
-    color:white;
+    color: #40241B;
     text-decoration: none;
 }
 
+.wanted{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
 .containerCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+}  
 
 .outlawCard{
     background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    background-repeat:no-repeat;
+    background-size: 100%;
     width: 30%;
-    height: fit-content;
-    margin:10px auto;
+    height:100%;
+    margin:1px auto;
     border: solid 1px black;
-
+    text-align: center;
+    vertical-align: top;
 }
 
-h2, h3{
-text-align: center;
+form{
+    border: solid 1px blue;
+    display: flex;
+    
 }
+
+
 
 

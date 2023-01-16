@@ -30,7 +30,7 @@
         @if(Auth::check() && Auth::user()->isAdmin)
         <button>
             <a href="{{ route('createOutlaw') }}">        
-                Create New Manhunt Quest
+                🛞Create New Manhunt Quest🛞
             </a>               
         </button>
         @endif
@@ -41,10 +41,12 @@
     
     <div class="outlawCard">
         <a  href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
-        <h2 >{{ $outlaw->alias }}</h2>
-        <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo {{ $outlaw->name }}">
-        <h3 >Reward ${{ $outlaw->reward }}</h3>
+        <h3 class="wanted">WANTED</h3>
+        <h5>{{ $outlaw->alias }}</h5>
+        <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: 65%; height: 30%" alt="photo {{ $outlaw->name }}"> 
+        <h6 >Reward ${{ $outlaw->reward }}</h6>
         </a>
+        </div>
     
         <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
             @method('delete')
@@ -62,7 +64,7 @@
             </button>
             @endif
         </form>
-    </div>                            
+                                
     @endforeach
     </div>
 
