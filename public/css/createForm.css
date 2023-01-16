@@ -1,0 +1,83 @@
+body{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");  
+    background-attachment: fixed;
+    color: white;
+}
+
+.cardForm{
+    margin:0 auto;
+    width: 90%; 
+
+}
+
+.formTitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:white;
+    text-align: center;
+
+}
+
+
+label{
+    color: white;
+    margin-top: 10px;
+
+}
+input::placeholder,textarea::placeholder {
+    color:#40241B;
+    opacity: 0.75;
+    font-style: italic;
+   
+}
+
+.buttonContainer{
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    border-color: black;
+     
+}
+
+a.buttonContainer{
+
+    color: white;
+}
+
+.createButton{
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px; 
+    background-image: none; 
+    color:white;
+
+}
+
+.createButtonIcon{
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    vertical-align:bottom;
+}
+
+.returnButton{
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px; 
+    background-image: none; 
+    color:white;
+}
+
+.returnButtonIcon{
+
+    width: 20px;
+    height: 20px;
+    vertical-align:bottom;
+
+}

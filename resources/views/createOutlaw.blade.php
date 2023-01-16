@@ -4,9 +4,9 @@
     <div class="containerCreate">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="cardTitle"> Create New Manhunt Quest</h2>
+                <div class="cardForm">
+                    <div class="cardForm">
+                        <h2 class="formTitle"> Create New Manhunt</h2>
                         <form class="row g-3" action="{{ route('storeOutlaw') }}" method="post">
                             @csrf
                             <div class="col-md-12">
@@ -43,15 +43,16 @@
                             </div>                                             
                             <div class="col-12">
                                 <label for="inputImg" class="form-label">Portrait</label>
-                                <input type="url" name="img" class="form-control" id="inputImg" placeholder= "Write the url address of the image" required>
-                            </div>
+                                <input type="url" name="img" class="form-control" id="inputImg" placeholder= "Write the url address of the image" required>                           
                             
                             </div>
-                            <div class="float-right">
-                                <a class="btn btn-primary" href="{{ route('home') }}"> ↩ </a>
-                            </div>                            
-                            <div class="btnCreate">
-                                <button type="submit" value="Create">Create Manhunt Quest</button>
+                            <div class="buttonContainer">
+                                <button class="returnButton">
+                                    <img src="./img/goldArrowLeft.svg" alt="Return Home" class="returnButtonIcon"><a  href="{{ route('home') }}">Return</a>
+                                </button>
+                                <button type="submit" value="createButton" class="createButton">
+                                    <img src="./img/sheriffStar.svg" alt="Create Manhunt" class="createButtonIcon">Create
+                                </button>
                             </div>
                         </form>
                     </div>
