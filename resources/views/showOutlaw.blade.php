@@ -14,10 +14,20 @@
                 <h5>gang {{ $outlaw->gang }}</h5>
                 <h4>{{ $outlaw->deadline }}</h4>
             </div>
+            <div>
+                <button>
+                    <a href="{{ route('join', $outlaw->id)}}">💰 Join</a>
+                </button>
+                <button>
+                    <a href="{{ route('leave', $outlaw->id)}}">🧨 Leave</a>
+                </button>
+            </div>
             <div class="float-right">
                 <a class="btn btn-primary" href="{{ route('home') }}"> ↩ </a>
             </div>
         </div>
+
+            
     </section>
 
 @endsection

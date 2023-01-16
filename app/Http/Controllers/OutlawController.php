@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Outlaw;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class OutlawController extends Controller
 {
@@ -14,9 +17,8 @@ class OutlawController extends Controller
      */
     public function index()
     {
-        //
-        $outlaws = Outlaw::get();
-        //var_dump($outlaws);
+        $outlaws = Outlaw::Paginate(2);
+        
         return view('home', compact('outlaws'));
     }
 
@@ -105,4 +107,24 @@ class OutlawController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function join($id){
+        $outlaw = Outlaw::find($id);
+        $user = User::find(Auth::id());
+
+        $user->outlaw()->attach($outlaw);
+
+
+        return redirect()->route('home');
+    }
+
+    public function leave($id){
+        $outlaw = Outlaw::find($id);
+        $user = User::find(Auth::id());
+
+        $user->outlaw()->detach($outlaw);
+
+        return redirect()->route('home');
+    }
+
 }
