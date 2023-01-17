@@ -55,8 +55,7 @@ a{
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;     
-
+    flex-wrap: wrap; 
     
 }  
 
@@ -83,6 +82,11 @@ a{
 .buttonModify{
     color: white;
 
+}
+
+.paginate{
+    background-color: blue;
+    margin: 0 auto;
 }
 
 
