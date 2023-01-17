@@ -39,19 +39,19 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="inputDeadline" class="form-label">Deadline</label>
-                                <input type="datetime-local" name="deadline" class="form-control" id="inputDeadline" placeholder= "Write the deadline of the Outlaw" required>
+                                <input type="datetime" name="deadline" class="form-control" id="inputDeadline" placeholder= "Write the deadline of the Outlaw" required>
                             </div>                                             
                             <div class="col-12">
                                 <label for="inputImg" class="form-label">Portrait</label>
-                                <input type="url" name="img" class="form-control" id="inputImg" placeholder= "Write the url address of the image" required>                           
-                            
+                                <input type="url" name="img" class="form-control" id="inputImg" placeholder= "Write the url address of the image" required>
                             </div>
+
                             <div class="buttonContainer">
                                 <button class="returnButton">
-                                    <img src="./img/goldArrowLeft.svg" alt="Return Home" class="returnButtonIcon"><a  href="{{ route('home') }}">Return</a>
+                                    <img src="http://drive.google.com/uc?export=view&id=1fOtVXPjTIsjWzk__c-DOFTG9-ntu1wpm" alt="Return Home" class="returnButtonIcon"><a class="returnButton"  href="{{ route('home') }}">Return</a>
                                 </button>
-                                <button type="submit" value="createButton" class="createButton">
-                                    <img src="./img/sheriffStar.svg" alt="Create Manhunt" class="createButtonIcon">Create
+                                <button type="submit" value="createButton" class="createButtonForm">
+                                    <img src="http://drive.google.com/uc?export=view&id=1mK3Iqj-C1IwD_JCGlp-42hrMYXj9r0iy" alt="Create Manhunt" class="createButtonIcon">Create
                                 </button>
                             </div>
                         </form>

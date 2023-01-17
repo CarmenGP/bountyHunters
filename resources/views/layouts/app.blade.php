@@ -23,6 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/createForm.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/editForm.css') }}" rel="stylesheet">
 
 </head>
 <body>
