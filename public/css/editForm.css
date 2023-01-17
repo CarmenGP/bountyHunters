@@ -11,7 +11,6 @@ body{
 .cardForm{
     margin:0 auto;
     width: 90%; 
-
 }
 
 .formTitle {
@@ -24,7 +23,6 @@ body{
 label{
     color: white;
     margin-top: 10px;
-
 }
 
 input,textarea {
@@ -41,9 +39,10 @@ input,textarea {
     width: 100%;
 }
 
-a.buttonContainer:active,
-a.buttonContainer:hover,
-a.buttonContainer:visited{
+
+a:active,
+a:hover,
+a:visited{
 
     color: white;
 }
