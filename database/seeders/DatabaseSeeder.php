@@ -50,6 +50,30 @@ class DatabaseSeeder extends Seeder
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
         ]);
+        Outlaw::factory()->create ([
+
+            'name' => 'Lola García',
+            'alias' => 'LoLaG',
+            'crime' => 'HTML',
+            'hint' => 'Web',
+            'reward' => '5050',
+            'description' => 'Tall woman with a lot of ambition to learn Full Stack Web Development at any cost, she takes all FrameWork and libraries in her stride. She has been seen hanging around Arrabal on Tuesdays and Thursdays.',
+            'deadline' => '2023-02-14 11:30:00',
+            'gang' => '5',
+            'img' => 'https://drive.google.com/uc?export=view&id=1Jt3zV5oGqamZSJbKuMYFCNe2-PzIx-wN',
+        ]);
+        Outlaw::factory()->create ([
+
+            'name' => 'Veronica Flores',
+            'alias' => 'VeFlo',
+            'crime' => 'Workflow',
+            'hint' => 'fried Eggs',
+            'reward' => '3050',
+            'description' => 'Latina loose in Malaga, she usually ventures near to flow charts to throw her pursuers off the scent. She travels through Spain in a northwesterly direction accompanied by her partner, with her wagon although she has no registration and bumps into everything in her path.',
+            'deadline' => '2023-02-10 16:30:00',
+            'gang' => '2',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+        ]);
         Outlaw::factory(1)->create();
 
         User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
