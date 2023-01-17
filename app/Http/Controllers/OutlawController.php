@@ -17,8 +17,8 @@ class OutlawController extends Controller
      */
     public function index()
     {
-        $outlaws = Outlaw::Paginate(2);
-        
+
+        $outlaws = Outlaw::orderBy("deadline")->paginate(6); 
         return view('home', compact('outlaws'));
     }
 
