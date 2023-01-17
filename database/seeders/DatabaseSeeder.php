@@ -52,6 +52,18 @@ class DatabaseSeeder extends Seeder
         ]);
         Outlaw::factory()->create ([
 
+            'name' => 'Anabel Vilar',
+            'alias' => 'Calamity Anna',
+            'crime' => 'Abisal',
+            'hint' => 'Hires women to do her bidding',
+            'reward' => '4050',
+            'description' => 'Lone woman who roams villages on horseback, recruiting rural women to her gang to teach them her outlaw tactics.',
+            'deadline' => '2023-01-10 15:30:00',
+            'gang' => '8',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+        ]);
+        Outlaw::factory()->create ([
+
             'name' => 'Lola García',
             'alias' => 'LoLaG',
             'crime' => 'HTML',
@@ -67,11 +79,48 @@ class DatabaseSeeder extends Seeder
             'name' => 'Veronica Flores',
             'alias' => 'VeFlo',
             'crime' => 'Workflow',
-            'hint' => 'fried Eggs',
+            'hint' => 'Fried Eggs',
             'reward' => '3050',
-            'description' => 'Latina loose in Malaga, she usually ventures near to flow charts to throw her pursuers off the scent. She travels through Spain in a northwesterly direction accompanied by her partner, with her wagon although she has no registration and bumps into everything in her path.',
+            'description' => 'She usually entures near to flow charts to throw her pursuers off the scent. She travels through Spain in a northwesterly direction accompanied by her partner, with her wagon although she has no registration and bumps into everything in her path.',
             'deadline' => '2023-02-10 16:30:00',
             'gang' => '2',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+        ]);
+
+        Outlaw::factory()->create ([
+
+            'name' => 'Lola Navarro',
+            'alias' => 'ZLoL',
+            'crime' => 'Illustrator',
+            'hint' => 'Vectorizes',
+            'reward' => '4090',
+            'description' => 'She hides behind comfortable places where she can rest from her vector adventures, she is usually sleeping at the inn. She can be recognized by her sleepy face.',
+            'deadline' => '2023-01-05 16:30:00',
+            'gang' => '1',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+        ]);
+        Outlaw::factory()->create ([
+
+            'name' => 'Carmen Gallardo',
+            'alias' => 'Amapola',
+            'crime' => 'Google',
+            'hint' => 'Intell seeker',
+            'reward' => '5020',
+            'description' => 'Short-haired blonde with a friendly smile. She cajoles her informants and convinces them to obtain information that she sells to criminals for exorbitant loot. Last seen on the train bound for Madrid.',
+            'deadline' => '2023-03-15 14:30:00',
+            'gang' => '5',
+            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+        ]);
+        Outlaw::factory()->create ([
+
+            'name' => 'Florencia Tiscornia',
+            'alias' => 'Flora',
+            'crime' => 'Indiscreet questions',
+            'hint' => 'Question raiser',
+            'reward' => '2020',
+            'description' => 'Dont let her questions confuse you, she is undisciplined in the face of the indiscreet questions she asks in order to get the information she needs to achieve her goals.',
+            'deadline' => '2023-03-14 10:30:00',
+            'gang' => '7',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
         ]);
         Outlaw::factory(1)->create();
