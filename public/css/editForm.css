@@ -39,10 +39,9 @@ input,textarea {
     width: 100%;
 }
 
-
-a:active,
-a:hover,
-a:visited{
+a.returnButton:active,
+a.returnButton:hover,
+a.returnButton:visited{
 
     color: white;
 }
