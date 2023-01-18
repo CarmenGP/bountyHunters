@@ -41,3 +41,6 @@ Route::get('/show/{id}', [OutlawController::class,'show'])->name('showOutlaw');
 //Join and Leave
 Route::get('/join/{id}', [OutlawController::class,'join'])->name('join')->middleware('auth');
 Route::get('/leave/{id}', [OutlawController::class,'leave'])->name('leave')->middleware('auth');
+
+//list
+Route::get('/list/{id}', [OutlawController::class,'list'])->name('list');

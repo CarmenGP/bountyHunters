@@ -127,4 +127,13 @@ class OutlawController extends Controller
         return redirect()->route('home');
     }
 
+    public function list($id)
+    {
+        
+        $outlaw = Outlaw::find($id);
+
+        return view('list', compact('outlaw'));
+    }
+
+
 }

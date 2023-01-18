@@ -46,7 +46,7 @@
             <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: 60%; height: 30%" alt="photo {{ $outlaw->name }}"> 
             <h5 class="reward" ><b>Reward ${{ $outlaw->reward }}</b></h5>
             </a>
-        
+            <a  href="{{ route('list', ['id' => $outlaw->id]) }}">LLEVAME</a>
     
         <form class="deleteModify" action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
             @method('delete')
