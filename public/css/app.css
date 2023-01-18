@@ -1,12 +1,25 @@
-*{
+body{
     margin:0;
     padding: 0;
     border: 0; 
     font-family: 'Rye', cursive;
-    color:white;
-    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
+    color:black;
     background-attachment: fixed;
+}
 
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: -0.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+button{
+    background: none;
+    width: fit-content;
+    border-style: none;
+    color: white;
 }
 
 .createButton{
@@ -16,14 +29,65 @@
     border-radius: 10px;
     padding: 5px; 
     background-image: none;  
-
 }
 
 a{
-    color:white;
+    color: #40241B;
     text-decoration: none;
 }
 
-section{
-    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq")!important;
+.wanted{
+    text-align: center;
+    margin-top: 9%;
+    font-size:medium;
 }
+
+.alias{
+    font-size:smaller;
+}
+
+.reward{
+    font-size:x-small;
+}
+
+.containerCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+}  
+
+.outlawCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 30%;
+    height:100%;
+    margin:1px auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.deleteModify{
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;   
+
+}
+
+.buttonModify{
+    color: white;
+
+}
+
+.paginate{
+    background-color: blue;
+    margin: 0 auto;
+}
+
+
+

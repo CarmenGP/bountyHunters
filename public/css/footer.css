@@ -2,6 +2,7 @@
 footer{
     background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
     height: 30%;
+    margin: 0;
 }
 
 .iconsContainer{    
@@ -13,13 +14,18 @@ footer{
     align-items: center;
 }
 
+.copyRight{
+    color: white;
+}
+
 .smTags{
+    color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    margin-right: 10%;
+    margin: 0 10% 0 0;
 }
 
 .falseCRight{

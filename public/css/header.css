@@ -1,0 +1,34 @@
+nav{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+    color:white;
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");
+    background-attachment: fixed;
+}
+
+.menu{
+    border-color: white !important;
+    color: white !important;
+    margin-left: 5px;
+}
+
+.menuButton{
+    color:white !important;
+    border-color: white !important;
+}
+
+.menuLines{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.icons{
+    width: 30px;
+    max-width: 100%;
+    height:30px;
+    vertical-align: bottom;
+
+}
+
+

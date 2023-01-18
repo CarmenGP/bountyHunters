@@ -30,57 +30,43 @@
         @if(Auth::check() && Auth::user()->isAdmin)
         <button>
             <a href="{{ route('createOutlaw') }}">        
-                Create New Manhunt Quest
+                🛞Create New Manhunt Quest🛞
             </a>               
         </button>
         @endif
     </div>
+
+    <div class="containerCard">
     @foreach ($outlaws as $outlaw)
     
-        <div class="card mb-3" style="max-width: 540px;">
-        <a class="bt-adm m-1 " href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: auto; height: 100%" alt="photo {{ $outlaw->name }}">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h2 class="card-title">Reward ${{ $outlaw->reward }}</h2>
-                        <h3 class="card-title">{{ $outlaw->name }}</h3>
-                        <h4 class="card-title">{{ $outlaw->alias }}</h4>
-                        <!-- <p class="card-text text-white">{{ $outlaw->description }}</p> -->
-                        <p class="card-text text-brown">Gang number: {{ $outlaw->gang }}</p>
-                        <p class="card-text"><small >{{ $outlaw->deadline }}</small></p>
-                        <form action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
-                            @method('delete')
-                            @csrf
-                            @if(Auth::check() && Auth::user()->isAdmin)
-                            <button type="submit"
-                                class="bt-adm m-1 d-flex justify-content-center align-item-center"
-                                onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
-                                 🌵 delete manhunt
-                            </button>
-                            @endif
-                            @if(Auth::check() && Auth::user()->isAdmin)
-                            <button class="bt-adm m-1 d-flex justify-content-center align-item-center">
-                                <a  href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}"><img src="https://img.freepik.com/iconos-gratis/herradura_318-916026.jpg?t=st=1673278604~exp=1673279204~hmac=5330c070d21109f0999201c5864e60bf05a67a985e10fa058069cac163ea0dc5" width="5%" height="5%"> modify manhunt</a>
-                            </button>
-                            @endif
-                        </form>
-                    </div>                               
-                </div>
+        <div class="outlawCard">
+            <a  href="{{ route('showOutlaw', ['id' => $outlaw->id]) }}">
+            <h2 class="wanted"><b>WANTED</b></h2>
+            <h4 class="alias"><b>{{ $outlaw->alias }}</b></h4>
+            <img src="{{ $outlaw->img }}" class="img-fluid rounded-start" style="width: 60%; height: 30%" alt="photo {{ $outlaw->name }}"> 
+            <h5 class="reward" ><b>Reward ${{ $outlaw->reward }}</b></h5>
             </a>
-
-            <div>
-                <button>
-                    <a href="{{ route('join', $outlaw->id)}}">💰 Join</a>
-                </button>
-                <button>
-                    <a href="{{ route('leave', $outlaw->id)}}">🧨 Leave</a>
-                </button>
-            </div>
-        </div>       
+        
+    
+        <form class="deleteModify" action="{{ route('deleteOutlaw', ['id' => $outlaw->id]) }}" method="post">
+            @method('delete')
+            @csrf
+            @if(Auth::check() && Auth::user()->isAdmin)
+            <button class="buttonDelete" type="submit"  onclick="return confirm('Are you sure you wish to delete this hunt request? {{ $outlaw->name }} - ID {{ $outlaw->id }} ')">
+                <a>🌵 delete</a>
+            </button>
+            @endif
+            @if(Auth::check() && Auth::user()->isAdmin)
+            <button>
+                <a  class="buttonModify" href="{{ route('editOutlaw', ['id' => $outlaw->id]) }}"><img src="https://img.freepik.com/iconos-gratis/herradura_318-916026.jpg?t=st=1673278604~exp=1673279204~hmac=5330c070d21109f0999201c5864e60bf05a67a985e10fa058069cac163ea0dc5" width="9px" height="9px"> modify </a>
+            </button>
+            @endif
+        </form>   
+        </div>                        
     @endforeach
     </div>
-
+    <div>
+        {!! $outlaws->links()!!}
+    </div>
+    
 @endsection

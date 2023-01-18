@@ -1,66 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![logo bounty Cartel y madera](https://user-images.githubusercontent.com/116545851/212129741-abf3a651-d7cb-48a6-8406-6f604514ca97.PNG)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## PROJECT TITLE:
+Bounty Hunters
+## A BRIEF DESCRIPTION OF WHAT THIS PROJECT DOES:
+- To create in mobile first a web application in which the users are immersed in the Wild West and sign up to catch the outlaw in the available missions created by a sheriff administrator.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- The registered user can sign up and unsubscribe from each search mission and will receive a message that he/she has signed up for the hunt with information about the hunt.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Outlaw hunts have a deadline and expired ones will appear with a different design than the active ones.
 
-## Learning Laravel
+## MEMBERS: 👩‍💻
+- @FlorTiscornia
+(https://github.com/FlorTiscornia)
+- @LolaGM
+(https://github.com/LolaGM)
+- @veflo13
+(https://github.com/veflo13)
+- @CarmenGP
+(https://github.com/CarmenGP)
+- @ZLoln
+(https://github.com/zloln)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## SCREENSHOTS:
+![image](https://user-images.githubusercontent.com/116561400/212030568-a92243a8-e6f7-4b7b-af65-eb6059cb2b17.png)
+![image](https://user-images.githubusercontent.com/116561400/212292316-d37a30b8-b47c-4380-9f1f-83fc6c453730.png)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## STACKS: 🔧
+![image](https://user-images.githubusercontent.com/116561400/212031741-ce353bdc-46a2-4c82-b1a4-0774c9a327cc.png)
+## Required
+* PHP 7.4 min
+* Composer installed
+* mySql
+## TEST: 👀
+![image](https://user-images.githubusercontent.com/116561400/212028967-d6bff30a-ecde-4f44-a7fb-80bcda55ef50.png)
+![image](https://user-images.githubusercontent.com/116561400/212029841-c8491e83-4d5b-4d08-b9fe-32644e4bb59e.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## METHODOLOGY:
+* Agile with Scrum in mob programming mode
+* MVC  software design pattern
+## NEXT STEPS:
+- Paginated list of hunts from most recent to least recent
+- Increase the list of outlaws
+- Email information to the hunter
+- Regular validation expressions
+- Give more information and options on the hunts
+## HOW TO INSTALL THIS PROJECT:
+* Git clone https://github.com/CarmenGP/bountyHunters.git 
+* Composer install
+* Create an empty database in PhpMyAdmin with database name : bountyhunters.
+* Import the following database table: minniePerez/public/importSql/childrenteeth.sql
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
