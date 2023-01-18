@@ -97,7 +97,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'She hides behind comfortable places where she can rest from her vector adventures, she is usually sleeping at the inn. She can be recognized by her sleepy face.',
             'deadline' => '2023-01-05 16:30:00',
             'gang' => '1',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1HfNsbxyzj1jEfz34Xb6c_Sfr5lx9mgJY',
         ]);
         Outlaw::factory()->create ([
 
