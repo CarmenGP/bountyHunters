@@ -25,6 +25,7 @@ return new class extends Migration
             $table->dateTime('deadline');
             $table->integer('gang');
             $table->string('img');
+            $table->boolean('vip');
 
             $table->timestamps();
         });

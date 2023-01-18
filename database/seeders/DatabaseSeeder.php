@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-01-19 08:30:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'vip'=>true
         ]);
 
         Outlaw::factory()->create ([
@@ -49,6 +50,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-01-10 12:00:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
+            'vip'=>true
         ]);
         Outlaw::factory()->create ([
 
@@ -61,6 +63,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-01-10 15:30:00',
             'gang' => '8',
             'img' => 'http://drive.google.com/uc?export=view&id=1kCiFjG1GsHnKWVPn-OA-SR81ggyu87VN',
+            'vip'=>true
         ]);
         Outlaw::factory()->create ([
 
@@ -73,6 +76,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-02-14 11:30:00',
             'gang' => '5',
             'img' => 'https://drive.google.com/uc?export=view&id=1Jt3zV5oGqamZSJbKuMYFCNe2-PzIx-wN',
+            'vip'=>false
         ]);
         Outlaw::factory()->create ([
 
@@ -85,6 +89,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-02-10 16:30:00',
             'gang' => '2',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'vip'=>false
         ]);
 
         Outlaw::factory()->create ([
@@ -98,6 +103,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-01-05 16:30:00',
             'gang' => '1',
             'img' => 'http://drive.google.com/uc?export=view&id=1HfNsbxyzj1jEfz34Xb6c_Sfr5lx9mgJY',
+            'vip'=>false
         ]);
         Outlaw::factory()->create ([
 
@@ -110,6 +116,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-03-15 14:30:00',
             'gang' => '5',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'vip'=>false
         ]);
         Outlaw::factory()->create ([
 
@@ -122,6 +129,7 @@ class DatabaseSeeder extends Seeder
             'deadline' => '2023-03-14 10:30:00',
             'gang' => '7',
             'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
+            'vip'=>false
         ]);
         Outlaw::factory(1)->create();
 
