@@ -40,6 +40,7 @@ Bounty Hunters
 ## METHODOLOGY:
 * Agile with Scrum in mob programming mode
 * MVC  software design pattern
+* TDD 
 ## NEXT STEPS:
 - Paginated list of hunts from most recent to least recent
 - Increase the list of outlaws
@@ -47,8 +48,18 @@ Bounty Hunters
 - Regular validation expressions
 - Give more information and options on the hunts
 ## HOW TO INSTALL THIS PROJECT:
-* Git clone https://github.com/CarmenGP/bountyHunters.git 
-* Composer install
-* Create an empty database in PhpMyAdmin with database name : bountyhunters.
-* Import the following database table: minniePerez/public/importSql/childrenteeth.sql
+* Git clone https://github.com/CarmenGP/bountyHunters.git  
+* Go to the project directory
+  ***cd bountyhunters***
+* Create a MySQL database named "outlaw"
+* Create in the text editor an .env file by copying the contents of .env.example and modify the database name (laravel by outlaw)
+* Install dependencies
+  ***npm install***
+  ***composer install***
+* Activate the server and keep this terminal open
+  ***npm run dev***
+* Run the PHP server and keep this terminal open
+  ***php artisan serve***
+* Import database
+ ***php artisan migrate:fresh --seed***
 
