@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             'hint' => 'PHP',
             'reward' => '5000',
             'description' => 'French-speaking outlaw wandering around Granada cantinas. He wears glasses, looks calm but turns dangerous when he draws his favourite weapon: Laravel. Regular player in most Western saloons',
-            'deadline' => '2023-01-19 08:30:00',
+            'deadline' => '2023-01-20 08:30:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
             'vip'=>true
@@ -47,7 +47,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Medium-built outlaw with long hair and a soft voice.
             Frequents the Malaga-bound railway, mugging people with her JavaScript gun.  
             Extremely dangerous with a pen and paper in her hand.',
-            'deadline' => '2023-01-10 12:00:00',
+            'deadline' => '2023-01-21 12:00:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
             'vip'=>true
@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             'hint' => 'Hires women to do her bidding',
             'reward' => '4050',
             'description' => 'Lone woman who roams villages on horseback, recruiting rural women to her gang to teach them her outlaw tactics.',
-            'deadline' => '2023-01-10 15:30:00',
+            'deadline' => '2023-01-23 15:30:00',
             'gang' => '8',
             'img' => 'http://drive.google.com/uc?export=view&id=1kCiFjG1GsHnKWVPn-OA-SR81ggyu87VN',
             'vip'=>true
@@ -131,18 +131,18 @@ class DatabaseSeeder extends Seeder
             'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
             'vip'=>false
         ]);
-        Outlaw::factory(1)->create();
+        Outlaw::factory()->create();
 
         User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
 
         User::factory()->create(['name' => 'user1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
 
         User::factory()
-            ->has(Outlaw::factory()->count(5))     
+            ->has(Outlaw::factory()->count(1))     
             ->create();
     
         Outlaw::factory()
-            ->has(User::factory()->count(5))     
+            ->has(User::factory()->count(1))     
             ->create();
     }
 
