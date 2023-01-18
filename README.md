@@ -23,10 +23,15 @@ Bounty Hunters
 - @ZLoln
 (https://github.com/zloln)
 
+![figma](https://user-images.githubusercontent.com/116546624/213263554-3b5c506f-16cc-4d46-9b7a-60284c8674d9.png)
 ## SCREENSHOTS:
-![image](https://user-images.githubusercontent.com/116561400/212030568-a92243a8-e6f7-4b7b-af65-eb6059cb2b17.png)
-![image](https://user-images.githubusercontent.com/116561400/212292316-d37a30b8-b47c-4380-9f1f-83fc6c453730.png)
-
+![Uploading figma.png…]()
+![skets](https://user-images.githubusercontent.com/116546624/213264754-5ff8fd9e-60e8-40ba-be8c-9d061b24cf0c.png)
+![w](https://user-images.githubusercontent.com/116546624/213264040-c2f11347-8708-4f90-9b7a-5e5d2c4230d6.png)
+![Vídeo sin título ‐ Hecho con Clipchamp](https://user-images.githubusercontent.com/116546624/213264254-34dd38dd-118a-4816-8772-9202d9891d49.gif)
+![image](https://user-images.githubusercontent.com/116561400/212292316-d37a30b8-b47c-4380-9f1f-8![Uploading figma.png…]()
+3fc6c453730.png)
+![Uploading skets.png…]()
 ## STACKS: 🔧
 ![image](https://user-images.githubusercontent.com/116561400/212031741-ce353bdc-46a2-4c82-b1a4-0774c9a327cc.png)
 ## Required
@@ -34,9 +39,8 @@ Bounty Hunters
 * Composer installed
 * mySql
 ## TEST: 👀
-![image](https://user-images.githubusercontent.com/116561400/212028967-d6bff30a-ecde-4f44-a7fb-80bcda55ef50.png)
-![image](https://user-images.githubusercontent.com/116561400/212029841-c8491e83-4d5b-4d08-b9fe-32644e4bb59e.png)
-
+![image (7)](https://user-images.githubusercontent.com/116546624/213261413-ea656cc3-40af-471e-9b70-43ee308e75c8.png)
+![image (8)](https://user-images.githubusercontent.com/116546624/213261548-5ce17b77-41af-46c6-b2b4-bd2f2939ee7c.png)
 ## METHODOLOGY:
 * Agile with Scrum in mob programming mode
 * MVC  software design pattern
