@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Dont let her questions confuse you, she is undisciplined in the face of the indiscreet questions she asks in order to get the information she needs to achieve her goals.',
             'deadline' => '2023-03-14 10:30:00',
             'gang' => '7',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
             'vip' => false,
         ]);
         Outlaw::factory()->create();
