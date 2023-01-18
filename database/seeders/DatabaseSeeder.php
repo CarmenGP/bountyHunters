@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             'hint' => 'PHP',
             'reward' => '5000',
             'description' => 'French-speaking outlaw wandering around Granada cantinas. He wears glasses, looks calm but turns dangerous when he draws his favourite weapon: Laravel. Regular player in most Western saloons',
-            'deadline' => '2023-01-19 08:30:00',
+            'deadline' => '2023-01-20 08:30:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
         ]);
@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Medium-built outlaw with long hair and a soft voice.
             Frequents the Malaga-bound railway, mugging people with her JavaScript gun.  
             Extremely dangerous with a pen and paper in her hand.',
-            'deadline' => '2023-01-10 12:00:00',
+            'deadline' => '2023-01-21 12:00:00',
             'gang' => '10',
             'img' => 'https://drive.google.com/uc?export=view&id=1zyX3TzTZg3EoYewBpxJmFZrWYHf_80WR',
         ]);
@@ -58,9 +58,9 @@ class DatabaseSeeder extends Seeder
             'hint' => 'Hires women to do her bidding',
             'reward' => '4050',
             'description' => 'Lone woman who roams villages on horseback, recruiting rural women to her gang to teach them her outlaw tactics.',
-            'deadline' => '2023-01-10 15:30:00',
+            'deadline' => '2023-01-23 15:30:00',
             'gang' => '8',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1fRCqoO82Na8FgGEXj1DMdXCieDfoQq5Z',
         ]);
         Outlaw::factory()->create ([
 
@@ -84,7 +84,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'She usually entures near to flow charts to throw her pursuers off the scent. She travels through Spain in a northwesterly direction accompanied by her partner, with her wagon although she has no registration and bumps into everything in her path.',
             'deadline' => '2023-02-10 16:30:00',
             'gang' => '2',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1Q9_b9JtHjZM2tICAAa0F02OmWdB7RkFM',
         ]);
 
         Outlaw::factory()->create ([
@@ -134,7 +134,7 @@ class DatabaseSeeder extends Seeder
             ->create();
     
         Outlaw::factory()
-            ->has(User::factory()->count(5))     
+            ->has(User::factory()->count(1))     
             ->create();
     }
 
