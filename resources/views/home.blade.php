@@ -16,7 +16,7 @@
 
                             <div class="carousel-caption d-none d-md-block">
                             
-                            <div>
+                            </div>
                 </div>
             </div>
 
@@ -25,6 +25,7 @@
     </div>
 
 </div>
+    
     <div class="createButton">
         @if(Auth::check() && Auth::user()->isAdmin)
         <button>
