@@ -131,18 +131,18 @@ class DatabaseSeeder extends Seeder
             'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
             'vip'=>false
         ]);
-        Outlaw::factory()->create();
+        Outlaw::factory(5)->create();
 
         User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
 
         User::factory()->create(['name' => 'user1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
 
         User::factory()
-            ->has(Outlaw::factory()->count(1))     
+            ->has(Outlaw::factory()->count(5))     
             ->create();
     
         Outlaw::factory()
-            ->has(User::factory()->count(1))     
+            ->has(User::factory()->count(5))     
             ->create();
     }
 

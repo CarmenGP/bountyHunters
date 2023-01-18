@@ -18,7 +18,7 @@ class OutlawController extends Controller
      */
     public function index()
     {
-        $sliders = Outlaw::where("vip", "1")->get(); 
+        $sliders = Outlaw::where("vip", 1)->get(); 
         $outlaws = Outlaw::orderBy("deadline")->paginate(6); 
         return view('home', compact('sliders','outlaws'));
     }

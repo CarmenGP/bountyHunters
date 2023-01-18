@@ -72,8 +72,9 @@ class CRUDOutlawTest extends TestCase
             'reward' => 'reward',
             'description' => 'description',
             'deadline' => '2023/01/19 19:00:00',
-            'gang' => '25',
-            'img' => 'img'
+            'gang' => '10',
+            'img' => 'img',
+            'vip' => 'vip'
         ]);
 
         $this->assertCount(1, Outlaw::all());
@@ -89,8 +90,9 @@ class CRUDOutlawTest extends TestCase
             'reward' => 'reward',
             'description' => 'description',
             'deadline' => '2023/01/19 19:00:00',
-            'gang' => '25',
-            'img' => 'img'
+            'gang' => '10',
+            'img' => 'img',
+            'vip' => 'vip'
         ]);
         $this->assertCount(1, Outlaw::all());
         }
