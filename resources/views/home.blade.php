@@ -8,9 +8,10 @@
             @foreach ($sliders as $key => $outlaw)
                             <div class="carrouselVip carousel-item {{ $key == 0 ? 'active' : ''}}">
                 @if ($outlaw->img)
-                                    <h4 class="alias"><b>{{ ("$outlaw->alias") }}</b></h4>
-                                    <img src='{{ asset("$outlaw->img") }}' class="d-block w-100 imgCarousel" alt="Most Wanted Outlaw Photo">
-                                    <h5 class="reward"><b>Reward ${{ ("$outlaw->reward") }}</b></h5>
+                                    <h2 class="wantedSlider"><b>WANTED</b></h2>
+                                    <h4 class="aliasSlider"><b>{{ ("$outlaw->alias") }}</b></h4>
+                                    <img src='{{ asset("$outlaw->img") }}' class="d-block imgCarousel" style="width: 65%; height: 30%; margin: 0% auto;" alt="Most Wanted Outlaw Photo">
+                                    <h5 class="rewardSlider"><b>Reward ${{ ("$outlaw->reward") }}</b></h5>
                             </div>
                 @endif
 

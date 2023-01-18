@@ -19,10 +19,10 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: fit-content;
-
-
+    height: 470px;
+    margin:0;
 }
+
 
 .containerCarrousel{
     text-align: center;
@@ -44,12 +44,22 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
 }
 
 .vipClass{
+    position: absolute;
     text-align: center;
-    margin: auto;
-    width: 100%;
-    height: auto
+    margin: 63% 15% 0% 40%;
+    width: 140%;
+    height: auto;
+}
 
+.wantedSlider{
+    text-align: center;
+    margin-top: 3%;
 
+}
+
+.rewardSlider{
+    font-size:small;
+    margin: 3% 0 5% 0;
 }
 
 button{
