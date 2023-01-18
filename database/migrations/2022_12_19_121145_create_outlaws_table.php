@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('outlaws', function (Blueprint $table) {
             $table->id();
-            
             $table->string('name',150);
             $table->string('alias',50);
             $table->string('crime',150);
@@ -25,6 +24,8 @@ return new class extends Migration
             $table->dateTime('deadline');
             $table->integer('gang');
             $table->string('img');
+            $table->boolean('vip');
+
 
             $table->timestamps();
         });
