@@ -2,30 +2,23 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="row">        
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="https://img.freepik.com/vector-gratis/cartel-vintage-deseado_225004-1070.jpg?w=360" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="https://img.freepik.com/vector-gratis/cartel-vintage-deseado_225004-1070.jpg?w=360" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="https://img.freepik.com/vector-gratis/vintage-queria-cartel-salvaje-oeste_225004-79.jpg" class="d-block w-100" alt="Most Wanted Outlaw photo" width="580px" height="350px">
-                    </div>
+        @foreach ($sliders as $key => $outlaw)
+                        <div class="carousel-item {{ $key == 0 ? ' active' : ''}}">
+        @if ($outlaw->img)
+                            <h5>{{ ("$outlaw->alias") }}</h5>
+                            <img src="{{ asset("$outlaw->img") }}" class="d-block w-100 imgCarousel" alt="Photo hunt">
+                            <h3>Reward ${{ ("$outlaw->reward") }}</h3>
+        @endif
+                            <div class="carousel-caption d-none d-md-block">
+                            
+                            <div>
+                        </div>
+                        
+        @endforeach
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </div>
     <div class="createButton">
         @if(Auth::check() && Auth::user()->isAdmin)
         <button>

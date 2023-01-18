@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Outlaw;
 use App\Models\User;
+use App\Models\Outlaw;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -17,9 +18,9 @@ class OutlawController extends Controller
      */
     public function index()
     {
-
+        $sliders = Outlaw::where("vip", "1")->get(); 
         $outlaws = Outlaw::orderBy("deadline")->paginate(4); 
-        return view('home', compact('outlaws'));
+        return view('home', compact('sliders','outlaws'));
     }
 
     /**
