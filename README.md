@@ -29,9 +29,6 @@ Bounty Hunters
 ![skets](https://user-images.githubusercontent.com/116546624/213264754-5ff8fd9e-60e8-40ba-be8c-9d061b24cf0c.png)
 ![w](https://user-images.githubusercontent.com/116546624/213264040-c2f11347-8708-4f90-9b7a-5e5d2c4230d6.png)
 ![Vídeo sin título ‐ Hecho con Clipchamp](https://user-images.githubusercontent.com/116546624/213264254-34dd38dd-118a-4816-8772-9202d9891d49.gif)
-![image](https://user-images.githubusercontent.com/116561400/212292316-d37a30b8-b47c-4380-9f1f-8![Uploading figma.png…]()
-3fc6c453730.png)
-![Uploading skets.png…]()
 ## STACKS: 🔧
 ![image](https://user-images.githubusercontent.com/116561400/212031741-ce353bdc-46a2-4c82-b1a4-0774c9a327cc.png)
 ## Required
