@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Lone woman who roams villages on horseback, recruiting rural women to her gang to teach them her outlaw tactics.',
             'deadline' => '2023-01-10 15:30:00',
             'gang' => '8',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1kCiFjG1GsHnKWVPn-OA-SR81ggyu87VN',
         ]);
         Outlaw::factory()->create ([
 
@@ -121,7 +121,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Dont let her questions confuse you, she is undisciplined in the face of the indiscreet questions she asks in order to get the information she needs to achieve her goals.',
             'deadline' => '2023-03-14 10:30:00',
             'gang' => '7',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
         ]);
         Outlaw::factory(1)->create();
 
