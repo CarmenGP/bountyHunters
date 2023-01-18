@@ -5,24 +5,26 @@
     <div class="containerCarrousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner vipClass">
+                
             @foreach ($sliders as $key => $outlaw)
                             <div class="carrouselVip carousel-item {{ $key == 0 ? 'active' : ''}}">
+                            
                 @if ($outlaw->img)
                                     <h2 class="wantedSlider"><b>WANTED</b></h2>
                                     <h4 class="aliasSlider"><b>{{ ("$outlaw->alias") }}</b></h4>
                                     <img src='{{ asset("$outlaw->img") }}' class="d-block imgCarousel" style="width: 65%; height: 30%; margin: 0% auto;" alt="Most Wanted Outlaw Photo">
                                     <h5 class="rewardSlider"><b>Reward ${{ ("$outlaw->reward") }}</b></h5>
                             </div>
+                            
                 @endif
 
                             <div class="carousel-caption d-none d-md-block">
                             
-                            </div>
+                            
                 </div>
             </div>
 
             @endforeach
-      
     </div>
 
 </div>
