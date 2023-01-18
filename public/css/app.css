@@ -14,6 +14,41 @@ h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
     line-height: 1.2;
 }
 
+.sheriffOffice{
+
+    background-image: url("");
+
+}
+
+.containerCarrousel{
+
+
+}
+
+.carrouselVip{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    padding: 10px;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 30%;
+    height:100%;
+    margin:1px auto;
+    text-align: center;
+    vertical-align: top;
+    color: #40241B;
+    font-weight: 500;
+}
+
+.vipClass{
+
+/*     justify-content: center;
+ */    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: auto
+
+
+}
 
 button{
     background: none;
@@ -29,6 +64,11 @@ button{
     border-radius: 10px;
     padding: 5px; 
     background-image: none;  
+}
+
+.createButtonAnchor{
+    color: white;
+    text-decoration: none;
 }
 
 a{
