@@ -55,7 +55,7 @@ class DatabaseSeeder extends Seeder
         Outlaw::factory()->create ([
 
             'name' => 'Anabel Vilar',
-            'alias' => 'Calamity Anna',
+            'alias' => 'Calamity A',
             'crime' => 'Abisal',
             'hint' => 'Hires women to do her bidding',
             'reward' => '4050',
@@ -115,7 +115,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Short-haired blonde with a friendly smile. She cajoles her informants and convinces them to obtain information that she sells to criminals for exorbitant loot. Last seen on the train bound for Madrid.',
             'deadline' => '2023-03-15 14:30:00',
             'gang' => '5',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'http://drive.google.com/uc?export=view&id=1VhaqoFGwlJxtucq5kvWm7NxW6-6gYYRA',
             'vip'=>false
         ]);
         Outlaw::factory()->create ([
