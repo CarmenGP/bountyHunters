@@ -39,7 +39,7 @@ Bounty Hunters
 ![image (7)](https://user-images.githubusercontent.com/116546624/213261413-ea656cc3-40af-471e-9b70-43ee308e75c8.png)
 ![image (8)](https://user-images.githubusercontent.com/116546624/213261548-5ce17b77-41af-46c6-b2b4-bd2f2939ee7c.png)
 ## METHODOLOGY:
-* Agile with Scrum in mob programming mode
+* Agile with Scrum in mob programming and pair progrmaming
 * MVC  software design pattern
 * TDD 
 ## NEXT STEPS:
