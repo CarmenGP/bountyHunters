@@ -48,6 +48,9 @@ Bounty Hunters
 - Email information to the hunter
 - Regular validation expressions
 - Give more information and options on the hunts
+- Restrict the registration function to one per user.
+- Show a past event as unavailable.
+- Indicate in the Administrator form a button for highlights.
 ## HOW TO INSTALL THIS PROJECT:
 * Git clone https://github.com/CarmenGP/bountyHunters.git  
 * Go to the project directory
