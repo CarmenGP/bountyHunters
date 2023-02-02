@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Outlaw;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+
 
 class OutlawController extends Controller
 {
@@ -14,10 +18,9 @@ class OutlawController extends Controller
      */
     public function index()
     {
-        //
-        $outlaws = Outlaw::get();
-        //var_dump($outlaws);
-        return view('home', compact('outlaws'));
+        $sliders = Outlaw::where("vip", 1)->get(); 
+        $outlaws = Outlaw::orderBy("deadline")->paginate(6); 
+        return view('home', compact('sliders','outlaws'));
     }
 
     /**
@@ -105,4 +108,24 @@ class OutlawController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function join($id){
+        $outlaw = Outlaw::find($id);
+        $user = User::find(Auth::id());
+
+        $user->outlaw()->attach($outlaw);
+
+
+        return redirect()->route('home');
+    }
+
+    public function leave($id){
+        $outlaw = Outlaw::find($id);
+        $user = User::find(Auth::id());
+
+        $user->outlaw()->detach($outlaw);
+
+        return redirect()->route('home');
+    }
+
 }

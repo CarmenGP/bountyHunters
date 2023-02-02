@@ -26,7 +26,10 @@ class OutlawFactory extends Factory
             'description' => $this->faker->realText(),
             'deadline' => $this->faker->dateTime(),
             'gang' => $this->faker->biasedNumberBetween($min = 1, $max = 10, $function = 'sqrt'),
-            'img' => $this->faker->imageUrl()
+            'img' => $this->faker->imageUrl(),
+            'vip' => $this->faker->boolean(),
+            'img' => $this->faker->imageUrl(),
+            'vip'=>$this->faker->boolean()
         ];
     }
 }

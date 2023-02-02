@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+    color:black;
+    background-attachment: fixed;
+}
+
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: -0.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.sheriffOffice{
+    background-image: url("http://drive.google.com/uc?export=view&id=1E0IlFj3gLEGMBsMRZD_Ou89iSxMSImj7");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 470px;
+    margin:0;
+}
+
+
+.containerCarrousel{
+    text-align: center;
+    justify-content: center;
+}
+
+.carrouselVip{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    padding: 10px;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 30%;
+    height:100%;
+    margin:1px auto;
+    text-align: center;
+    vertical-align: top;
+    color: #40241B;
+    font-weight: 500;
+}
+
+.vipClass{
+    position: absolute;
+    text-align: center;
+    margin: 63% 15% 0% 40%;
+    width: 140%;
+    height: auto;
+}
+
+.wantedSlider{
+    text-align: center;
+    margin-top: 3%;
+
+}
+
+.rewardSlider{
+    font-size:small;
+    margin: 3% 0 5% 0;
+}
+
+button{
+    background: none;
+    width: fit-content;
+    border-style: none;
+    color: white;
+}
+
+.createButton{
+    margin:10px auto;
+    width: fit-content;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px; 
+    background-image: none;  
+}
+
+.createButtonAnchor{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    color: #40241B;
+    text-decoration: none;
+}
+
+.wanted{
+    text-align: center;
+    margin-top: 9%;
+    font-size:medium;
+}
+
+.alias{
+    font-size:smaller;
+}
+
+.reward{
+    font-size:x-small;
+}
+
+.containerCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=15CkUBGUwcCJSdsFFa_hUqWDh46EPuaat"); 
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+}  
+
+.outlawCard{
+    background-image: url("https://drive.google.com/uc?export=view&id=1HgBuK1Q4uykp0HB_NMyrBAx-u2Xdlctq");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 30%;
+    height:100%;
+    margin:1px auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.deleteModify{
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;   
+
+}
+
+.buttonModify{
+    color: white;
+
+}
+
+.paginate{
+    background-color: blue;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    padding: 0;
+    border: 0; 
+    font-family: 'Rye', cursive;
+    background-image: url("https://drive.google.com/uc?export=view&id=1D089er-xGVttq9JviUof80sfbc5l94MW");  
+    background-attachment: fixed;
+    color: white;
+}
+
+.cardForm{
+    margin:0 auto;
+    width: 90%; 
+}
+
+.formTitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:white;
+    text-align: center;
+}
+
+label{
+    color: white;
+    margin-top: 10px;
+}
+
+input,textarea {
+    color:#40241B;
+    opacity: 0.75;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+}
+
+a.returnButton:active,
+a.returnButton:hover,
+a.returnButton:visited{
+
+    color: white;
+}
+
+.saveButtonForm{
+    color:white;
+    border-color: none !important;
+}
+
+.saveButtonIcon{
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    vertical-align:bottom;
+}
+
+.returnButton{
+    padding: 5px; 
+    background-image: none; 
+    color:white;
+}
+
+.returnButtonIcon{
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    vertical-align:bottom;
+}
