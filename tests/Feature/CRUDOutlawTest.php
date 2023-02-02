@@ -124,7 +124,6 @@ class CRUDOutlawTest extends TestCase
             $response->assertSee($outlaw->name);
             $response->assertStatus(200)
                     ->assertViewIs('showOutlaw') 
-                     ->assertSee($outlaw->name);
-                    
+                    ->assertSee($outlaw->name);            
         }       
 }

@@ -45,7 +45,6 @@
                                 <label for="inputImg" class="form-label">Portrait</label>
                                 <input type="url" name="img" class="form-control" id="inputImg" placeholder= "Write the url address of the image" required>
                             </div>
-
                             <div class="buttonContainer">
                                 <button class="returnButton">
                                     <img src="http://drive.google.com/uc?export=view&id=1fOtVXPjTIsjWzk__c-DOFTG9-ntu1wpm" alt="Return Home" class="returnButtonIcon"><a class="returnButton"  href="{{ route('home') }}">Return</a>
@@ -60,7 +59,5 @@
             </div>
         </div>
     </div>
-
-
 @endsection
 

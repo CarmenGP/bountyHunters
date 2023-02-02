@@ -16,7 +16,6 @@ use App\Http\Controllers\OutlawController;
 |
 */
 
-
 Auth::routes();
 
 // R del CRUD
@@ -36,7 +35,6 @@ Route::patch('/outlaw/{id}', [OutlawController::class, 'update'])->name('updateO
 
 //Show
 Route::get('/show/{id}', [OutlawController::class,'show'])->name('showOutlaw');
-
 
 //Join and Leave
 Route::get('/join/{id}', [OutlawController::class,'join'])->name('join')->middleware('auth');

@@ -6,13 +6,11 @@
         <img src="https://drive.google.com/uc?export=view&id=1fTcpymxNxS9mopyfcYrCzXIAKX0gbgBq" width="5%">
         <img src="https://drive.google.com/uc?export=view&id=1GhcSAnB4SioqGkWIjV3CsbBrIWvo_LmM" width="20%">
     </div>
-
     <div class="smTags">
         <p class="falseCRight">&copy;Copyright 2023</p>
         <p>Fb</p>
         <p>Tw</p>
         <p>Ig</p>
         <p>Mail</p>
-    </div>
-    
+    </div>    
 </footer>

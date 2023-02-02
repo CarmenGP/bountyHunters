@@ -88,7 +88,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'She usually entures near to flow charts to throw her pursuers off the scent. She travels through Spain in a northwesterly direction accompanied by her partner, with her wagon although she has no registration and bumps into everything in her path.',
             'deadline' => '2023-02-10 16:30:00',
             'gang' => '2',
-            'img' => 'https://drive.google.com/uc?export=view&id=14mEnJxgAmGiWBtbIWjN-elZDHB_zBTZJ',
+            'img' => 'https://drive.google.com/uc?export=view&id=1sczKxKRPrjZKzO6xIB32xf4p7TU29L7b',
             'vip'=>false
         ]);
 
@@ -115,7 +115,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Short-haired blonde with a friendly smile. She cajoles her informants and convinces them to obtain information that she sells to criminals for exorbitant loot. Last seen on the train bound for Madrid.',
             'deadline' => '2023-03-15 14:30:00',
             'gang' => '5',
-            'img' => 'http://drive.google.com/uc?export=view&id=1VhaqoFGwlJxtucq5kvWm7NxW6-6gYYRA',
+            'img' => 'https://drive.google.com/uc?export=view&id=1ahOodLAEGNbS3LeHoMrqqynXPsAfDT8u',
             'vip'=>false
         ]);
         Outlaw::factory()->create ([
@@ -131,18 +131,18 @@ class DatabaseSeeder extends Seeder
             'img' => 'http://drive.google.com/uc?export=view&id=1zwzI7EtJ1hRj2UU1cc6LQwJtrru6BTFA',
             'vip'=>false
         ]);
-        Outlaw::factory(5)->create();
+        Outlaw::factory(1)->create();
 
         User::factory()->create(['name' => 'admin', 'email' =>'admin@admin.com', 'isAdmin' => true]);
 
         User::factory()->create(['name' => 'user1', 'email' =>'user1@user1.com', 'isAdmin' => false]);
 
         User::factory()
-            ->has(Outlaw::factory()->count(5))     
+            ->has(Outlaw::factory()->count(1))     
             ->create();
     
         Outlaw::factory()
-            ->has(User::factory()->count(5))     
+            ->has(User::factory()->count(1))     
             ->create();
     }
 

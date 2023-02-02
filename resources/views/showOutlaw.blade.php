@@ -30,12 +30,6 @@
                 <a class="" href="{{ route('home') }}"> ↩ </a>
             </div>
         </div>
-    </div>
-        
-
-            
-    </section>
-
-
-
+    </div>            
+</section>
 @endsection

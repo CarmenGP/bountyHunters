@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="containerCreate">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -43,12 +42,10 @@
                                     <label for="inputDeadline" class="form-label">Deadline</label>
                                     <input type="datetime" name="deadline" class="form-control" id="inputDeadline" value="{{$outlaw->deadline}}" required>
                                 </div>
-
                                 <div class="col-12">
                                     <label for="inputImg" class="form-label">Portrait</label>
                                     <input type="url" name="img" class="form-control" id="inputImg" value="{{$outlaw->img}}" required>
-                                </div>
-                            
+                                </div>                            
                                 </div>
                                 <div class="buttonContainer">
                                     <button class="returnButton">
@@ -63,7 +60,5 @@
             </div>
         </div>
     </div>
-
-
 @endsection
 
